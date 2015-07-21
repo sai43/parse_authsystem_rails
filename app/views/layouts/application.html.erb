@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ParseRailsBoilerplate</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% unless current_user.blank? %>
+  Logged in as <strong id='user_email'><%= current_user.username %></strong>. 
+<% else %>
+  <%= link_to "Sign up", signup_path  %> |
+  <%= link_to "Login", login_path %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
