@@ -10,6 +10,7 @@
 
 <% unless current_user.blank? %>
   Logged in as <strong id='user_email'><%= current_user.username %></strong>. 
+  <%= link_to "Sign Out", logout_path %>
 <% else %>
   <%= link_to "Sign up", signup_path  %> |
   <%= link_to "Login", login_path %>

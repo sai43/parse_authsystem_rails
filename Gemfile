@@ -4,8 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
-gem 'parse_resource'  #, :git => 'git@github.com:adelevie/parse_resource.git'
+#gem 'parse_resource', :git => 'git@github.com:adelevie/parse_resource.git'
 
+gem 'parse_resource', github: 'adelevie/parse_resource'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
