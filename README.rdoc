@@ -1,28 +1,19 @@
-== README
+# About
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails 4.2 app that uses [parse_resource](http://github.com/adelevie/parse_resource) for model persistence and includes a simple auth system.
 
-Things you may want to cover:
+If you already use Parse, this Rails app is a really quick way to give your app a web presence.
 
-* Ruby version
+## Installation
 
-* System dependencies
+`git clone https://kvanadev1@bitbucket.org/kvanadev1/parse-ror-sampleapp.git`
 
-* Configuration
+`cd parse-rails-boilerplate`
 
-* Database creation
+Change application names where necessary, if desired.
 
-* Database initialization
+`bundle install`
 
-* How to run the test suite
+Create a `parse_resource.yml` file. Instructions [here](https://github.com/adelevie/parse_resource/blob/master/README.md).
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+`rails s` and enjoy.
